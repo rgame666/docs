@@ -1,0 +1,24 @@
+EBS Output Post Processor Troubleshooting
+=========================================
+
+The OPP process only run on the concurrent manager nodes
+Login to each CM nodes
+cd $APPLCSF/$APPLLOG
+ls -ltr FNDOPP*
+
+This will show the log files from the OPP, check for any errors like OOM
+
+Terminate the OPP processes from EBS Concurrent Manager Form:-
+Concurrent -> Manager -> Adminsiter
+Select the manager to be terminated and click on the Terminate button
+(I have found the Restart option not to be very reliable)
+
+Then kill off from the backend on CM nodes
+
+ps -ef |grep FNDOPP | grep -v grep
+
+kill -9 PID
+
+Once the processes are terminated go back to Concurrent Manager form and Activate the OPP:-
+Concurrent -> Manager -> Adminsiter
+Select the manager to be started and click on the Activate button

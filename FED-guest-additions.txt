@@ -1,0 +1,10 @@
+sudo -i
+dnf update kernel*
+reboot
+mkdir /media/VirtualBoxGuestAdditions
+mount -r /dev/cdrom /media/VirtualBoxGuestAdditions
+dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
+KERN_DIR=/usr/src/kernels/`uname -r`/build
+export KERN_DIR
+cd /media/VirtualBoxGuestAdditions
+./VBoxLinuxAdditions.run

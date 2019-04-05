@@ -1,0 +1,23 @@
+EBS Latest Patches
+==================
+
+How To Use Patch Wizard Without Setting Up Internet Connection (Doc ID 741129.1)
+
+The InfoBundle can be downloaded from the following locations:
+
+https://updates.oracle.com/download/InfoBundleR12.zip (for R12) 
+
+System Adminstrator -> Oracle Application Manager -> Patching and Utilities -> Site Map -> Maintenance
+
+Patch Wizard - > Preferences
+
+Should be set to /apps/software/patch_wizard_stg
+
+Copy InfoBundleR12.zip to /apps/software/patch_wizard_stg/.
+
+Patch Wizard -> Recommend/Analyze patches -> Tasks
+
+Check 'Create Recommendations'
+Use filter 'Recommended and Consolidated Maintenance Patches'
+Click 'OK'
+Submit job.

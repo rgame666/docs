@@ -7,7 +7,7 @@ The InfoBundle can be downloaded from the following locations:
 
 https://updates.oracle.com/download/InfoBundleR12.zip (for R12) 
 
-System Adminstrator -> Oracle Application Manager -> Patching and Utilities -> Site Map -> Maintenance
+System Administrator -> Oracle Application Manager -> Patching and Utilities -> Site Map -> Maintenance
 
 Patch Wizard - > Preferences
 
